@@ -1,0 +1,56 @@
+.footer
+	width 100%
+	min-width $min-width
+	order 3
+	padding-bottom 80px
+	&__logo
+		a
+			&:hover
+				opacity 1
+	&__wrapper
+		display flex
+		justify-content: space-between
+		& > .footer__social
+			display none
+	&__item
+		display flex
+		flex-direction: column
+	&__title
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: $blue
+		margin-bottom 10px
+		max-width: 126px
+	&__desc
+		max-width: 136px
+		font-size: 12px;
+		line-height: 19px;
+	&__list
+		&-item
+			&:not(:last-child)
+				margin-bottom 15px
+			a
+				font-size 12px
+				line-height 12px
+				&:hover
+					opacity .5
+		.item-hidden
+			display none
+	&__social
+		margin-top 46px
+		display flex
+		justify-content: space-between
+		gap 10px
+		&-item
+			transition: $default-transition
+			&:hover
+				opacity .5
+	&__copyright
+		display block
+		margin-top 46px
+		font-size 12px
+		line-height 12px
+		text-align left
+		

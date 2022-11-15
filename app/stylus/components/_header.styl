@@ -1,0 +1,139 @@
+.header
+	width 100%
+	min-width $min-width
+	order 1
+	padding: 40px 0 70px
+	&__logo
+		margin-right auto
+		a
+			&:hover
+				opacity 1
+	&__wrapper
+		display flex
+		justify-content: center
+		align-items: center
+	&__nav
+		margin-right 330px
+		transition: .5s
+		.header__search
+			display none
+		&-list
+			display flex
+			justify-content: space-between
+			gap: 40px
+			&-item
+				a
+					padding: 5px 0
+					&:hover
+						opacity .5
+	&__buttons
+		display flex
+		justify-content: space-between
+		align-items: center
+		gap: 60px
+	&__burger
+		width: 18px
+		height: 18px
+		transition: $default-transition
+		display flex
+		justify-content: center
+		align-items: center
+		position relative
+		z-index -1
+		&-item
+			display inline-block
+			width: 18px
+			height: 2px
+			background: #363636
+			border-radius: 2px
+			position relative
+			transition: $default-transition
+			&:before
+				content: ""
+				height: 2px
+				width: 100%
+				position absolute
+				top: 6px
+				display block
+				background: #363636
+				transition: $default-transition
+				border-radius: 2px
+			&:after
+				content: ""
+				height: 2px
+				width: 100%
+				position absolute
+				top: -6px
+				display block
+				background: #363636
+				transition: $default-transition
+				border-radius: 2px
+	&__phone
+		a
+			display flex
+			justify-content: space-between
+			align-items: center
+			gap: 12px
+			padding: 5px 0
+			&:hover
+				opacity: .5
+		&-number
+			color: $accent
+	&__search
+		cursor pointer
+		transition: $default-transition
+		padding: 5px 0
+		&:hover
+			opacity .5
+
+
+
+.active
+	overflow: hidden
+	.header
+		&__nav
+			transform: translateY(0)
+			.header__search
+				display block
+		&__buttons
+			display flex
+			justify-content: space-between
+			align-items: center
+			gap: 30px
+		&__burger
+			&-item
+				display inline-block
+				width: 18px
+				height: 0
+				background: #363636
+				border-radius: 2px
+				position relative
+				transition: $default-transition
+				&:before
+					content: ""
+					height: 2px
+					width: 100%
+					position absolute
+					top: 0
+					display block
+					background: #363636
+					transition: $default-transition
+					border-radius: 2px
+					transform: rotate(45deg)
+				&:after
+					content: ""
+					height: 2px
+					width: 100%
+					position absolute
+					top: 0
+					display block
+					background: #363636
+					transition: $default-transition
+					border-radius: 2px
+					transform: rotate(-45deg)
+
+
+
+
+
+	

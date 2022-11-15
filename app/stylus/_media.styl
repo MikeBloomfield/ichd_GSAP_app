@@ -1,0 +1,509 @@
+/*==========  Desktop First  ==========*/
+
+// /* Large Devices, Wide Screens */
+@media (max-width : 1200px)
+    .header
+        &__nav
+            margin-right 130px
+@media (max-width : 1024px)
+    .video
+        &__abs-1
+            top: 55%
+        &__abs-2
+            top: 64%
+        &__abs-3
+            top: 131%
+    .hero__slider-wrapper
+        .slick-prev
+            left: 80%
+        .slick-next
+            right: 10%
+    .hero__wrapper-bottom
+        .hero__pages
+            right: -17%
+    .header
+        &__nav
+            margin-right 20px
+        &__buttons
+            gap: 30px
+    .services
+        &__wrapper
+            justify-content: center
+    .swiper
+        right: 230px
+    .stories__story
+        left: 43.3%
+// /* Medium Devices, Desktops */
+// @media (max-width : 992px)
+// /* Small Devices, Tablets */
+@media (max-width : 768px)
+    .hero__title
+        min-height: 136px
+    .hero__wrapper-bottom .hero__pages
+        right: 13%
+    .hero .slick-next
+        top: -24%
+    .hero .slick-prev
+        top: -24%
+    .stories__story
+        left: 50%
+        top: 110%
+        height: auto
+        transform: translateX(-50%)
+    .stories__story-item
+        padding 0
+    .stories__story-item-desc
+        font-size 14px
+        line-height 24px
+        max-width: 375px
+    .swiper-pagination-fraction
+        left: -37px
+        top: 540px
+    .swiper-button-prev, .swiper-button-next
+        top: 557px
+    .swiper-button-next
+        right: 48px
+    .swiper-button-prev
+        left: 550px
+    .swiper
+        right: 125px
+
+
+    h2
+        font-size 40px
+        line-height 42px
+    .arrow
+        span
+            display none
+    .header
+        &__nav
+            position: fixed
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: #fff
+            margin-right 0
+            z-index 999
+            transform: translateY(-100%)
+            &-list
+                margin-top 100px
+                display flex
+                justify-content: space-between
+                align-items: center
+                flex-direction: column
+                gap: 40px
+                .header__search
+                    display block
+        &__search
+            display none
+        &__phone-number
+            display none
+        &__burger
+            z-index 9999
+
+    .hero
+        margin-bottom 100px
+        &__title
+            font-size 48px
+            line-height 45px
+            max-width: 341px
+            margin-bottom 115px
+        &__desc
+            left: 0%
+            width: 315px
+            top: 60%
+            line-height 24px
+        &__pages
+            right: 45%
+        .slick-prev
+            left: 60%
+            top: -23%
+        .slick-next
+            right: 30%
+            top: -23%
+        &__slider
+            margin-top 45px
+            &-item
+                img
+                    height: 269px
+
+    .video
+        margin-bottom 100px
+        &__title
+            max-width: 221px
+        &__wrapper
+            align-items: flex-start
+            flex-direction: column
+            gap: 20px
+        &__abs-1
+            top: 55%
+        &__abs-2
+            top: 54%
+        &__abs-3
+            top: 121%
+        &__desc
+            left: 0%
+            max-width: 315px
+        .video__startBlock-btn
+            width: 100%
+            left: 65px
+    
+    .services
+        margin-bottom 100px
+        &__title
+            margin-left 0
+        &__wrapper
+            display none
+        &__wrapper-hide
+            display block
+        &__wrapper-top
+            .arrow
+                top: 573px
+                right: 535px
+        .services__pages
+            display block
+            right: -47%
+        .slick-next
+            right: 11%
+            top: 96.7%
+        .slick-prev
+            left: 70%
+            top: 96.7%
+
+    .stories
+        margin-bottom 450px
+        &__hidden
+            background: #fff
+            position absolute
+            top: 0%
+            left: 69%
+            height: 351px
+            width: 1000px
+        &__desc
+            margin: 0 auto 50px
+            &-item
+                padding: 0
+                &-title
+                    font-size 18px
+                    line-height 24px
+                    margin-bottom 10px
+                    text-align center
+                &-label
+                    margin-bottom 20px
+                    text-align center
+               
+        &__pages
+            top 400px
+            right: -47%
+        &__wrapper
+            right: 26%
+        .slick-track
+            height: 351px
+        .slick-slide
+            max-width: 84px
+            margin: 0 5px
+        .slick-active
+            margin-left: 90px
+        .slick-prev
+            left: 98%
+            top: 212%
+        .slick-next
+            top: 212%
+            right: -18%
+
+    .map
+        margin-bottom 100px
+        &__pic
+            margin: 50px 0 50px
+        &__desc
+            max-width: 315px
+        &__wrapper-bottom
+            justify-content: center
+            gap: 10px
+        &__subtitle
+            text-align center
+            font-size 20px
+            line-height 28px
+        &__desc-bottom
+            text-align center
+
+    .footer
+        &__desc
+            max-width: 301px
+            display flex
+            gap: 30px
+            div
+                max-width: 150px
+                text-align center
+        &__copyright
+            display block
+            text-align center
+        &__wrapper
+            flex-direction: column
+            align-items: center
+            gap: 50px
+            & > .footer__social
+                display block
+                margin-top: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                gap: 40px;
+                order: 6
+        &__title
+            max-width: 100%
+            text-align center
+            margin-bottom 20px
+        &__item
+            .footer__social
+                display none
+            .item-hidden
+                display block
+            .item-visible
+                display none
+            &:nth-child(3)
+                order: 5
+                .footer__list
+                    width: 285px
+                    display flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    height: 76px
+                    flex-direction: column
+                    align-items: center
+                    gap: 40px 0
+                    &-item
+                        width: 50%
+                        margin-bottom 0
+                        text-align center
+            &:nth-child(2)
+                .footer__list
+                    width: 285px
+                    display flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    height: 134px
+                    flex-direction: column
+                    align-items: center
+                    gap: 40px 0
+                    &-item
+                        width: 50%
+                        margin-bottom 0
+                        text-align center
+
+// /* Small Devices, Tablets */
+// @media (max-width : 568px)
+// /* Small Devices, Tablets */
+@media (max-width : 480px)
+    .hero__wrapper-bottom .hero__pages
+        right: 33%
+    .swiper-button-prev 
+        top: 1117px
+        transform: scale(-2, 2)
+        left: 820px
+    .swiper-button-next
+        top: 1117px
+        transform: scale(2)
+    .swiper-button-next
+        right: -272px
+    .swiper-pagination-fraction
+        transform: scale(2)
+        top: 1096px
+        left: 373px
+    .stories__wrapper-top .arrow
+        top: 876px
+        right: 260px
+
+    .swiper
+        right: 323px
+        transform: scale(0.5)
+        height: 302px
+    .stories
+        margin-bottom 370px
+    
+
+    .hero
+        &__pages
+            top: 0
+            right: 33%
+        .slick-next
+            right: 13%
+            top: -34%
+        .slick-prev
+            left: 69%
+            top: -34%
+        &__slider
+            &-item
+                img
+                    height: 201px
+    .stories__story
+        top: 90%
+            
+    .services
+        &__wrapper-top
+            margin-bottom 60px
+            .arrow
+                right: 200px
+                top: 553px
+    .stories
+        &__wrapper
+            right: 4%
+        &__hidden
+            left: 86%
+        .slick-prev
+            left: 77%
+            top: 214%
+        .slick-next
+            right: 0%
+            top: 214%
+
+    .video
+        margin-bottom 0
+        .wrapper
+            padding: 0
+        &__wrapper
+            padding: 0 30px
+        &__abs-1
+            max-width: 128px
+            top: 55%
+        &__abs-2
+            max-width: 315px
+            top: 54%
+        &__abs-3
+            max-width: 128px
+            top: 105%
+        &__block
+            background-size: cover
+            background-position: center
+            padding-top: 92.5%
+            left: -60px
+            border-radius: 0
+        &__wrapper-block
+            padding: 60px 0
+        .video__startBlock-btn
+            left: 100px
+// /* Custom, iPhone Retina */
+@media (max-width : 390px)
+    .stories__wrapper-top .arrow
+        right: 230px
+    .stories__story-item-title
+        margin-bottom 0
+    .stories__story-item-label
+        margin-bottom 11px
+    .stories__story
+        left: 49%
+        width: 325px
+        top: 89%
+    .swiper-button-prev 
+        top: 1117px
+        transform: scale(-2, 2)
+        left: 820px
+    .swiper-button-next
+        top: 1117px
+        transform: scale(2)
+    .swiper-button-next
+        right: -272px
+    .stories__wrapper-top .arrow
+        top: 886px
+    .swiper-pagination-fraction
+        transform: scale(2)
+        top: 1096px
+        left: 373px
+    .swiper-pagination-fraction
+        top: 1116px
+    .swiper-button-prev
+        top: 1139px
+    .swiper-button-next
+        top: 1139px
+
+    .swiper
+        right: 323px
+        transform: scale(0.5)
+        height: 302px
+    .stories
+        margin-bottom 370px
+    .stories__story-item-desc-hidden
+        display block
+        font-size 14px
+        line-height 24px
+    .stories__story-item-desc
+        display none
+
+
+
+    .stories
+        &__wrapper
+            right: -2%
+        &__hidden
+            left: 91%
+
+     .video
+        &__abs-1
+            top: 55%
+        &__abs-2
+            top: 54%
+            left: 10%
+        &__abs-3
+            top: 104%
+@media (max-width : 375px)
+    .video
+        &__abs-1
+            top: 60%
+        &__abs-2
+            top: 59%
+            left: 10%
+        &__abs-3
+            top: 117%
+    .swiper-button-next
+        right: -262px
+    .stories__wrapper-top .arrow
+        top: 886px
+        right: 220px
+    .stories
+        &__wrapper
+            right: -3%
+        &__hidden
+            left: 91%
+@media (max-width : 320px)
+    .hero__desc
+        width: 295px
+    .hero__wrapper-bottom .hero__pages
+        right: 26%
+    .stories__story
+        left: 52%
+        width: 315px
+    .hero
+        &__title
+            font-size 45px
+    .services__wrapper-hide
+        .services__item-title
+            font-size 24px
+            line-height 30px
+        .services__item-desc
+            max-width: 200px
+    .services
+        .slick-next, .slick-prev
+            top: 99.7%
+        .services__pages
+            top: 22px
+    .stories
+        &__wrapper
+            right: -14%
+        &__hidden
+            left: 100%
+    .stories__wrapper-top .arrow
+        right: 200px
+        top: 906px
+    .swiper-pagination-fraction
+        left: 263px
+    .swiper-button-prev
+        left: 710px
+    .swiper-button-next
+        right: -112px
+    .stories
+        margin-bottom 390px
+/**/
